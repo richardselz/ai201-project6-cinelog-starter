@@ -54,4 +54,7 @@ The maintainer states that they would prefer the 'date added' as the preferred m
 - Claude then created a pragmatic update.
 
 ## PR Description
-<!-- Written at the end — feature overview, design decisions, manual testing steps -->
+The CineLog watchlist allows for users to add films to their watchlist. The code originally set each item in the watchlist as Public, but a discussion in the pr-response has mentioned that we should allow for the users to select the sort preference (date-added, alphabetical, etc..). Tests have been created that test the successful path of adding to the watchlist.
+
+## Thanks
+Thanks to Claude for helping me orient in the codebase, untangle a botched rebase (recovering a dropped `WatchlistEntry` model), and stress-test my review responses along the way.
