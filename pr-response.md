@@ -27,13 +27,19 @@
 
 ## Comment 4 — Default visibility
 **My position:**
+The default value should be `False` instead of `True`.
 **Reasoning:**
+The reasoning is that you usually have an opt-in instead of opt-out feature. If someone wants the film to be public they should be required to click a checkbox instead of have it default set to `True`.
 **Tradeoff acknowledged:**
+If we keep it with the default being `True` it will potentially make it have more viralability to it, but at the potential expense of privacy.
 
 ## Comment 5 — Sort order
 **My position:**
+It would be beneficial to allow the user to select the sort order. Whether that is on the users client or on the server.
 **Reasoning:**
+If we allow the user to select their sort preference they may be able to find more films that interest them based on their selection.
 **Engagement with reviewer's point:**
+The maintainer states that they would prefer the 'date added' as the preferred method instead of 'alphabetical'. The above position of allowing the users to select their preference would allow the maintainers choice along with what the user may want to do as well. 
 
 ## Comment 6 — Rebase
 **What conflicted:**
