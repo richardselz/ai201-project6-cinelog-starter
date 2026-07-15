@@ -1,7 +1,7 @@
 # PR Response Doc — CineLog Watchlist Feature
 
 ## AI Usage
-<!-- Fill in at the end — how you used AI tools during this project -->
+I used Claude for codebase orientation (summarizing `models.py`, `collection_service.py`, and the tests, and explaining `add_to_collection()`'s dedup pattern), for recovering a botched rebase (it diagnosed that the `WatchlistEntry` model had been dropped and that I'd used the wrong rebase base), for checking my commit messages against conventional format, and as a devil's advocate on Comments 4 and 5. The design decisions and their reasoning are my own — Claude only surfaced counterarguments; it did not write my Comment 4/5 arguments or make the calls for me.
 
 ## Comment 1 — Rename
 **What I did:**
@@ -55,6 +55,8 @@ The maintainer states that they would prefer the 'date added' as the preferred m
 
 ## PR Description
 The CineLog watchlist allows for users to add films to their watchlist. The code originally set each item in the watchlist as Public, but a discussion in the pr-response has mentioned that we should allow for the users to select the sort preference (date-added, alphabetical, etc..). Tests have been created that test the successful path of adding to the watchlist.
+
+![Git Log Image](git-log.png)
 
 ## Thanks
 Thanks to Claude for helping me orient in the codebase, untangle a botched rebase (recovering a dropped `WatchlistEntry` model), and stress-test my review responses along the way.
