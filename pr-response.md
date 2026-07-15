@@ -43,8 +43,15 @@ The maintainer states that they would prefer the 'date added' as the preferred m
 
 ## Comment 6 — Rebase
 **What conflicted:**
+- `models.py`: The `models.py` file removed the `WatchlistEntry` class.
+- All watchlist methods changed any integer ID to UUID
 **How I resolved it:**
+- At first I went through the UI in VS Code and staged changes that I would like to keep.
+- Then I ran into an issue where I believed to have gotten my repo into a weird state so I consulted with Claude.
+- Claude explained how to make verify that the rebase was complete.
 **How I verified no conflict remains:**
+- After doing the rebase and making sure that it had completed with the help of Claude I then had Claude check and see if everything that was needed was still appropriately included in the repo.
+- Claude then created a pragmatic update.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
